@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomical Processing Client</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Astronomical Processing Client</h2>
+
+        <div class="input-section">
+            <label for="starVelocity">Star Velocity:</label>
+            <input type="text" id="starVelocity" placeholder="Enter value">
+            <input type="text" id="starVelocityResult" placeholder="Result" readonly>
+        </div>
+
+        <div class="input-section">
+            <label for="starDistance">Star Distance:</label>
+            <input type="text" id="starDistance" placeholder="Enter value">
+            <input type="text" id="starDistanceResult" placeholder="Result" readonly>
+        </div>
+
+        <div class="input-section">
+            <label for="tempConversion">Temperature (C to K):</label>
+            <input type="text" id="tempConversion" placeholder="Enter value">
+            <input type="text" id="tempResult" placeholder="Result" readonly>
+        </div>
+
+        <div class="input-section">
+            <label for="eventHorizon">Blackhole Event Horizon:</label>
+            <input type="text" id="eventHorizon" placeholder="Enter value">
+            <input type="text" id="eventResult" placeholder="Result" readonly>
+        </div>
+
+        <div class="button-section">
+            <button class="action-button">Calculate</button>
+            <button class="action-button">Reset</button>
+        </div>
+
+        <div class="options-section">
+            <div class="dropdown">
+                <label for="language">Language:</label>
+                <select id="language">
+                    <option>English</option>
+                    <option>French</option>
+                    <option>German</option>
+                </select>
+            </div>
+
+            <div class="toggle-section">
+                <label for="mode">Mode:</label>
+                <button id="toggleMode">Day/Night Mode</button>
+            </div>
+
+            <div class="customization-section">
+                <button>Color Customization</button>
+                <button>Font Customization</button>
+            </div>
+        </div>
+
+        <div class="status-section">
+            <p>Status: Connected to Server</p>
+        </div>
+    </div>
+</body>
+</html>
