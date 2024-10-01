@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "q+3LLy7Z85BEl2NyfbvR+qARmedKZy6N1tBShfJqxYrmpYDuuq//ILBXNwHtj4yWkTnDwaox6QE5v/4cQNvRtg==",
+  "dgSpecHash": "48slHsGEQpnH18zZZnBPnXoQxoEW0WRv96JQERsULJ3d4WWEynlgzoYl7Mb7RLcuHlLzP2Fz3YljBkQW36lGJQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\30085203\\Documents\\LocalDev\\AssessmentTaskTwo\\ServerApp\\ServerApp\\ServerApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\30085203\\.nuget\\packages\\microsoft.extensions.objectpool\\6.0.16\\microsoft.extensions.objectpool.6.0.16.nupkg.sha512",
+    "C:\\Users\\30085203\\.nuget\\packages\\system.formats.asn1\\6.0.0\\system.formats.asn1.6.0.0.nupkg.sha512",
+    "C:\\Users\\30085203\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\30085203\\.nuget\\packages\\system.security.cryptography.pkcs\\6.0.1\\system.security.cryptography.pkcs.6.0.1.nupkg.sha512",
+    "C:\\Users\\30085203\\.nuget\\packages\\system.security.cryptography.xml\\6.0.1\\system.security.cryptography.xml.6.0.1.nupkg.sha512",
+    "C:\\Users\\30085203\\.nuget\\packages\\system.servicemodel.primitives\\8.0.0\\system.servicemodel.primitives.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

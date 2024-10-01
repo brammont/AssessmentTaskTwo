@@ -7,4 +7,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.ServiceModel.Primitives" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AstroMath">
+      <HintPath>..\..\AstroMath\AstroMath\bin\Debug\net8.0\AstroMath.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
