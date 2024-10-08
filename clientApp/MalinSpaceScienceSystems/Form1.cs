@@ -162,10 +162,8 @@ namespace ClientApp
             {
                 { "English", new Dictionary<string, string>()
                     {
-                        { "Title", "Malin Space Science Systems" },
-                        { "InputSection", "Input Section" },
-                        { "OutputSection", "Output Section" },
-                        { "SettingsPanel", "Settings Panel" },
+                        { "Title", "Astronomical Processing Client" },
+                        { "Language", "language" },
                         { "ErrorMessagingArea", "Error Messaging Area" },
                         { "StarVelocity", "Star Velocity" },
                         { "StarDistance", "Star Distance" },
@@ -179,15 +177,16 @@ namespace ClientApp
                         { "ButtonClear", "Clear" },
                         { "ButtonBackgroundColor", "Background Color" },
                         { "ButtonFontCustomization", "Font Customization" },
-                        { "CheckBoxNightMode", "Day/Night Mode" }
+                        { "Mode","Mode"},
+                        { "StatusServer","Server Status"},                        
+                        { "CheckBoxNightMode", "Day/Night Mode" },
+
                     }
                 },
                 { "French", new Dictionary<string, string>()
                     {
-                        { "Title", "Systèmes de Science Spatiale Malin" },
-                        { "InputSection", "Section d'entrée" },
-                        { "OutputSection", "Section de sortie" },
-                        { "SettingsPanel", "Panneau des paramètres" },
+                        { "Title", "Client de traitement astronomique" },
+                        { "Language", "Langue" },
                         { "ErrorMessagingArea", "Zone de messagerie d'erreur" },
                         { "StarVelocity", "Vitesse de l'étoile" },
                         { "StarDistance", "Distance de l'étoile" },
@@ -201,15 +200,15 @@ namespace ClientApp
                         { "ButtonClear", "Effacer" },
                         { "ButtonBackgroundColor", "Couleur de fond" },
                         { "ButtonFontCustomization", "Personnalisation des polices" },
+                        { "Mode","Mode"},
+                        { "StatusServer","État du serveur"},
                         { "CheckBoxNightMode", "Mode Jour/Nuit" }
                     }
                 },
                 { "German", new Dictionary<string, string>()
                     {
-                        { "Title", "Malin Weltraumwissenschaftssysteme" },
-                        { "InputSection", "Eingabebereich" },
-                        { "OutputSection", "Ausgabebereich" },
-                        { "SettingsPanel", "Einstellungen Panel" },
+                        { "Title", "Astronomischer Verarbeitungskunde" },
+                        { "Language", "Sprache" },
                         { "ErrorMessagingArea", "Fehlermeldungsbereich" },
                         { "StarVelocity", "Sternengeschwindigkeit" },
                         { "StarDistance", "Sterndistanz" },
@@ -223,6 +222,8 @@ namespace ClientApp
                         { "ButtonClear", "Löschen" },
                         { "ButtonBackgroundColor", "Hintergrundfarbe" },
                         { "ButtonFontCustomization", "Schriftanpassung" },
+                        { "Mode","Modus"},
+                        { "StatusServer","Serverstatus"},
                         { "CheckBoxNightMode", "Tag/Nacht Modus" }
                     }
                 }
@@ -238,22 +239,16 @@ namespace ClientApp
                 if (languageStrings.ContainsKey(selectedLanguage)) // Check for key existence
                 {
                     // Update title
-                    labelTitle.Text = languageStrings[selectedLanguage]["Title"]; // Ensure you have "Title" in your dictionary for each language
-
-                    // Update other labels
-                    //labelInputSection.Text = languageStrings[selectedLanguage]["InputSection"];
-                    //labelOutputSection.Text = languageStrings[selectedLanguage]["OutputSection"];
-                    labelSettingsPanel.Text = languageStrings[selectedLanguage]["SettingsPanel"];
+                    labelTitle.Text = languageStrings[selectedLanguage]["Title"];// Ensure you have "Title" in your dictionary for each language
+                    // Update other labels                   
+                    labelLanguage.Text = languageStrings[selectedLanguage]["Language"];
                     labelErrorMessagingArea.Text = languageStrings[selectedLanguage]["ErrorMessagingArea"];
                     labelStarVelocity.Text = languageStrings[selectedLanguage]["StarVelocity"];
                     labelStarDistance.Text = languageStrings[selectedLanguage]["StarDistance"];
                     labelStarLuminosity.Text = languageStrings[selectedLanguage]["StarLuminosity"];
                     labelStarMass.Text = languageStrings[selectedLanguage]["StarMass"];
-                    //labelResultVelocity.Text = languageStrings[selectedLanguage]["ResultVelocity"];
-                    //labelResultDistance.Text = languageStrings[selectedLanguage]["ResultDistance"];
-                    //labelResultLuminosity.Text = languageStrings[selectedLanguage]["ResultLuminosity"];
-                    //labelResultMass.Text = languageStrings[selectedLanguage]["ResultMass"];
-
+                    labelMode.Text = languageStrings[selectedLanguage]["Mode"];
+                    labelStatusServer.Text = languageStrings[selectedLanguage]["StatusServer"];
                     // Update buttons
                     buttonCalculate.Text = languageStrings[selectedLanguage]["ButtonCalculate"];
                     buttonClear.Text = languageStrings[selectedLanguage]["ButtonClear"];
@@ -291,24 +286,10 @@ namespace ClientApp
             }
         }
 
-        private void labelSettingsPanel_Click(object sender, EventArgs e)
+       
+        private void textBoxServerStatus_TextChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelTitle_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxErrorHandler_TextChanged(object sender, EventArgs e)
-        {
-
+            //here put code to show when the server is conected and running
         }
     }
 }

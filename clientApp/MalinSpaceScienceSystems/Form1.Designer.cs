@@ -34,7 +34,7 @@
             textBoxResultLuminosity = new TextBox();
             textBoxResultDistance = new TextBox();
             textBoxResultVelocity = new TextBox();
-            labelSettingsPanel = new Label();
+            labelLanguage = new Label();
             buttonFontCustomization = new Button();
             buttonBackgroundColor = new Button();
             checkBoxNightMode = new CheckBox();
@@ -55,9 +55,9 @@
             labelStarDistance = new Label();
             labelStarLuminosity = new Label();
             labelStarMass = new Label();
-            label1 = new Label();
-            label2 = new Label();
-            textBox1 = new TextBox();
+            labelMode = new Label();
+            labelStatusServer = new Label();
+            textBoxServerStatus = new TextBox();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSource2).BeginInit();
             SuspendLayout();
@@ -113,15 +113,15 @@
             textBoxResultVelocity.TabIndex = 2;
             textBoxResultVelocity.TextAlign = HorizontalAlignment.Center;
             // 
-            // labelSettingsPanel
+            // labelLanguage
             // 
-            labelSettingsPanel.AutoSize = true;
-            labelSettingsPanel.Location = new Point(43, 384);
-            labelSettingsPanel.Name = "labelSettingsPanel";
-            labelSettingsPanel.Size = new Size(77, 20);
-            labelSettingsPanel.TabIndex = 10;
-            labelSettingsPanel.Text = "Language:";
-            labelSettingsPanel.Click += labelSettingsPanel_Click;
+            labelLanguage.AutoSize = true;
+            labelLanguage.Location = new Point(43, 384);
+            labelLanguage.Name = "labelLanguage";
+            labelLanguage.Size = new Size(77, 20);
+            labelLanguage.TabIndex = 10;
+            labelLanguage.Text = "Language:";
+            labelLanguage.UseMnemonic = false;            
             // 
             // buttonFontCustomization
             // 
@@ -172,8 +172,7 @@
             textBoxErrorHandler.Margin = new Padding(3, 4, 3, 4);
             textBoxErrorHandler.Name = "textBoxErrorHandler";
             textBoxErrorHandler.Size = new Size(395, 27);
-            textBoxErrorHandler.TabIndex = 0;
-            textBoxErrorHandler.TextChanged += textBoxErrorHandler_TextChanged;
+            textBoxErrorHandler.TabIndex = 0;            
             // 
             // comboBoxLanguage
             // 
@@ -196,7 +195,6 @@
             labelTitle.TabIndex = 5;
             labelTitle.Text = "Astronomical Processing Client";
             labelTitle.TextAlign = ContentAlignment.TopCenter;
-            labelTitle.Click += labelTitle_Click;
             // 
             // textBoxStarVelocity
             // 
@@ -277,36 +275,36 @@
             labelStarMass.AutoSize = true;
             labelStarMass.Location = new Point(34, 259);
             labelStarMass.Name = "labelStarMass";
-            labelStarMass.Size = new Size(173, 20);
+            labelStarMass.Size = new Size(75, 20);
             labelStarMass.TabIndex = 13;
-            labelStarMass.Text = "Blackhole Event Horizon:";
+            labelStarMass.Text = "Star Mass:";
             // 
-            // label1
+            // labelMode
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(43, 441);
-            label1.Name = "label1";
-            label1.Size = new Size(51, 20);
-            label1.TabIndex = 15;
-            label1.Text = "Mode:";
-            label1.Click += label1_Click;
+            labelMode.AutoSize = true;
+            labelMode.Location = new Point(43, 441);
+            labelMode.Name = "labelMode";
+            labelMode.Size = new Size(51, 20);
+            labelMode.TabIndex = 15;
+            labelMode.Text = "Mode:";
             // 
-            // label2
+            // labelStatusServer
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(43, 548);
-            label2.Name = "label2";
-            label2.Size = new Size(97, 20);
-            label2.TabIndex = 16;
-            label2.Text = "Server Status:";
+            labelStatusServer.AutoSize = true;
+            labelStatusServer.Location = new Point(43, 548);
+            labelStatusServer.Name = "labelStatusServer";
+            labelStatusServer.Size = new Size(97, 20);
+            labelStatusServer.TabIndex = 16;
+            labelStatusServer.Text = "Server Status:";
             // 
-            // textBox1
+            // textBoxServerStatus
             // 
-            textBox1.Location = new Point(166, 548);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(272, 27);
-            textBox1.TabIndex = 17;
+            textBoxServerStatus.Location = new Point(166, 548);
+            textBoxServerStatus.Margin = new Padding(3, 4, 3, 4);
+            textBoxServerStatus.Name = "textBoxServerStatus";
+            textBoxServerStatus.Size = new Size(272, 27);
+            textBoxServerStatus.TabIndex = 17;
+            textBoxServerStatus.TextChanged += textBoxServerStatus_TextChanged;
             // 
             // Form1
             // 
@@ -314,13 +312,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(492, 690);
-            Controls.Add(textBox1);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(textBoxServerStatus);
+            Controls.Add(labelStatusServer);
+            Controls.Add(labelMode);
             Controls.Add(textBoxErrorHandler);
             Controls.Add(labelErrorMessagingArea);
             Controls.Add(buttonFontCustomization);
-            Controls.Add(labelSettingsPanel);
+            Controls.Add(labelLanguage);
             Controls.Add(buttonBackgroundColor);
             Controls.Add(buttonClear);
             Controls.Add(checkBoxNightMode);
@@ -362,7 +360,7 @@
         private ColorDialog colorDialog1;
         private FontDialog fontDialog1;
         private TextBox textBoxErrorHandler;
-        private Label labelSettingsPanel;
+        private Label labelLanguage;
         private Label labelErrorMessagingArea;
         private Button buttonClear;
 		private Label labelTitle;
@@ -375,8 +373,8 @@
 		private Label labelStarDistance;
 		private Label labelStarLuminosity;
 		private Label labelStarMass;
-		private Label label1;
-        private Label label2;
-        private TextBox textBox1;
+		private Label labelMode;
+        private Label labelStatusServer;
+        private TextBox textBoxServerStatus;
     }
 }
