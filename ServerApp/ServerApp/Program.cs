@@ -1,6 +1,6 @@
 ﻿using System;
 using System.ServiceModel;
-using AstroMath;
+using System.ServiceModel.Description;
 
 namespace ServerApp
 {
@@ -8,23 +8,27 @@ namespace ServerApp
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Server App Started...");
+			Console.WriteLine("Starting WCF Service...");
 
-			AstroMathFunctions mathFunctions = new AstroMathFunctions();
+			// Host the WCF service using the AstroServer implementation
+			using (ServiceHost host = new ServiceHost(typeof(AstroServer)))
+			{
+				// Configure the service with basic HTTP binding and NetNamedPipeBinding
+				host.AddServiceEndpoint(typeof(IAstroContract), new BasicHttpBinding(), "http://localhost:8080/AstroService");
 
-			double velocity = mathFunctions.StarVelocity(500.1, 500.0);
-			Console.WriteLine($"Star Velocity: {velocity} m/s");
+				// Enable service metadata for HTTP GET requests
+				ServiceMetadataBehavior smb = new ServiceMetadataBehavior
+				{
+					HttpGetEnabled = true,
+					HttpGetUrl = new Uri("http://localhost:8080/AstroService/mex")
+				};
+				host.Description.Behaviors.Add(smb);
 
-			double distance = mathFunctions.StarDistance(0.547);
-			Console.WriteLine($"Star Distance: {distance} parsecs");
-
-			double kelvin = mathFunctions.Kelvin(27);
-			Console.WriteLine($"Temperature: {kelvin} K");
-
-			double eventHorizon = mathFunctions.EventHorizon(8.2 * Math.Pow(10, 36));
-			Console.WriteLine($"Event Horizon: {eventHorizon} meters");
-
-			Console.ReadLine();
+				// Start the service
+				host.Open();
+				Console.WriteLine("Service is running... Press Enter to exit.");
+				Console.ReadLine();
+			}
 		}
 	}
 }

@@ -40,6 +40,18 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "System.Private.ServiceModel": {
+              "target": "Package",
+              "version": "[4.10.3, )"
+            },
+            "System.ServiceModel.Http": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.ServiceModel.NetNamedPipe": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "System.ServiceModel.Primitives": {
               "target": "Package",
               "version": "[8.0.0, )"
