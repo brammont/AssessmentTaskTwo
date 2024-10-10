@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{7B0E6348-F159-41AB-8758-633C937F50FA}|MalinSpaceScienceSystems\\ClientApp.csproj|solutionrelative:malinspacesciencesystems\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B0E6348-F159-41AB-8758-633C937F50FA}|MalinSpaceScienceSystems\\ClientApp.csproj|C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\clientApp\\malinspacesciencesystems\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7B0E6348-F159-41AB-8758-633C937F50FA}|MalinSpaceScienceSystems\\ClientApp.csproj|solutionrelative:malinspacesciencesystems\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7B0E6348-F159-41AB-8758-633C937F50FA}|MalinSpaceScienceSystems\\ClientApp.csproj|c:\\users\\mazue\\documents\\github\\assessmenttasktwo\\clientapp\\malinspacesciencesystems\\connected services\\servicereference1\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0E6348-F159-41AB-8758-633C937F50FA}|MalinSpaceScienceSystems\\ClientApp.csproj|solutionrelative:malinspacesciencesystems\\connected services\\servicereference1\\reference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0E6348-F159-41AB-8758-633C937F50FA}|MalinSpaceScienceSystems\\ClientApp.csproj|c:\\users\\mazue\\documents\\github\\assessmenttasktwo\\clientapp\\malinspacesciencesystems\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0E6348-F159-41AB-8758-633C937F50FA}|MalinSpaceScienceSystems\\ClientApp.csproj|solutionrelative:malinspacesciencesystems\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B0E6348-F159-41AB-8758-633C937F50FA}|MalinSpaceScienceSystems\\ClientApp.csproj|c:\\users\\mazue\\documents\\github\\assessmenttasktwo\\clientapp\\malinspacesciencesystems\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B0E6348-F159-41AB-8758-633C937F50FA}|MalinSpaceScienceSystems\\ClientApp.csproj|solutionrelative:malinspacesciencesystems\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B0E6348-F159-41AB-8758-633C937F50FA}|MalinSpaceScienceSystems\\ClientApp.csproj|c:\\users\\mazue\\documents\\github\\assessmenttasktwo\\clientapp\\malinspacesciencesystems\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B0E6348-F159-41AB-8758-633C937F50FA}|MalinSpaceScienceSystems\\ClientApp.csproj|solutionrelative:malinspacesciencesystems\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B0E6348-F159-41AB-8758-633C937F50FA}|MalinSpaceScienceSystems\\ClientApp.csproj|C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\clientApp\\malinspacesciencesystems\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7B0E6348-F159-41AB-8758-633C937F50FA}|MalinSpaceScienceSystems\\ClientApp.csproj|solutionrelative:malinspacesciencesystems\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Reference.cs",
+              "DocumentMoniker": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\clientApp\\MalinSpaceScienceSystems\\Connected Services\\ServiceReference1\\Reference.cs",
+              "RelativeDocumentMoniker": "MalinSpaceScienceSystems\\Connected Services\\ServiceReference1\\Reference.cs",
+              "ToolTip": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\clientApp\\MalinSpaceScienceSystems\\Connected Services\\ServiceReference1\\Reference.cs",
+              "RelativeToolTip": "MalinSpaceScienceSystems\\Connected Services\\ServiceReference1\\Reference.cs",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAQwOQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T03:52:34.591Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -56,14 +73,14 @@
               "RelativeDocumentMoniker": "MalinSpaceScienceSystems\\Form1.cs",
               "ToolTip": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\clientApp\\MalinSpaceScienceSystems\\Form1.cs",
               "RelativeToolTip": "MalinSpaceScienceSystems\\Form1.cs",
-              "ViewState": "AgIAAA4BAAAAAAAAAAA5wBwBAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-08T07:56:57.09Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\clientApp\\MalinSpaceScienceSystems\\Program.cs",
               "RelativeDocumentMoniker": "MalinSpaceScienceSystems\\Program.cs",
@@ -76,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\clientApp\\MalinSpaceScienceSystems\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "MalinSpaceScienceSystems\\Form1.Designer.cs",
@@ -89,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\clientApp\\MalinSpaceScienceSystems\\Form1.cs",
               "RelativeDocumentMoniker": "MalinSpaceScienceSystems\\Form1.cs",

@@ -3,12 +3,15 @@ using System.Drawing;
 using System.Globalization;
 using System.Windows.Forms;
 using System.ServiceModel;
+using ServiceReference1;
 
 namespace ClientApp
 
 {
     public partial class Form1 : Form
     {
+        private AstroContractClient _serviceClient;// WCF client instance
+        
         public Form1()
         {
             InitializeComponent();
@@ -16,6 +19,7 @@ namespace ClientApp
             SetInitialSettings();
 
         }
+
         private void InitializeLanguageComboBox()
         {
             comboBoxLanguage.Items.AddRange(new string[] { "English", "French", "German" });
