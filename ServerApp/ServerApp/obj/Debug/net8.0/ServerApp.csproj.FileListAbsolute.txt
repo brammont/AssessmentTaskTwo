@@ -1,6 +1,0 @@
-C:\Users\30085203\Documents\LocalDev\AssessmentTaskTwo\ServerApp\ServerApp\obj\Debug\net8.0\ServerApp.csproj.AssemblyReference.cache
-C:\Users\30085203\Documents\LocalDev\AssessmentTaskTwo\ServerApp\ServerApp\obj\Debug\net8.0\ServerApp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\30085203\Documents\LocalDev\AssessmentTaskTwo\ServerApp\ServerApp\obj\Debug\net8.0\ServerApp.AssemblyInfoInputs.cache
-C:\Users\30085203\Documents\LocalDev\AssessmentTaskTwo\ServerApp\ServerApp\obj\Debug\net8.0\ServerApp.AssemblyInfo.cs
-C:\Users\30085203\Documents\LocalDev\AssessmentTaskTwo\ServerApp\ServerApp\obj\Debug\net8.0\ServerApp.csproj.CoreCompileInputs.cache
-C:\Users\30085203\Documents\LocalDev\AssessmentTaskTwo\ServerApp\ServerApp\obj\Debug\net8.0\ServerApp.sourcelink.json

@@ -1,0 +1,106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\ServerApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E10E0D10-433C-4A5E-AFAD-4054FBF63273}|AstroService\\serverApp.csproj|C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\ServerApp\\AstroService\\IAstroContract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E10E0D10-433C-4A5E-AFAD-4054FBF63273}|AstroService\\serverApp.csproj|solutionrelative:AstroService\\IAstroContract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E10E0D10-433C-4A5E-AFAD-4054FBF63273}|AstroService\\serverApp.csproj|c:\\users\\mazue\\documents\\github\\assessmenttasktwo\\serverapp\\astroservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E10E0D10-433C-4A5E-AFAD-4054FBF63273}|AstroService\\serverApp.csproj|solutionrelative:astroservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E10E0D10-433C-4A5E-AFAD-4054FBF63273}|AstroService\\serverApp.csproj|C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\ServerApp\\AstroService\\AstroServer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E10E0D10-433C-4A5E-AFAD-4054FBF63273}|AstroService\\serverApp.csproj|solutionrelative:AstroService\\AstroServer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E10E0D10-433C-4A5E-AFAD-4054FBF63273}|AstroService\\serverApp.csproj|C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\ServerApp\\AstroService\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{E10E0D10-433C-4A5E-AFAD-4054FBF63273}|AstroService\\serverApp.csproj|solutionrelative:AstroService\\App.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\ServerApp\\AstroService\\Program.cs",
+              "RelativeDocumentMoniker": "AstroService\\Program.cs",
+              "ToolTip": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\ServerApp\\AstroService\\Program.cs",
+              "RelativeToolTip": "AstroService\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwB4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T06:48:08.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\ServerApp\\AstroService\\App.config",
+              "RelativeDocumentMoniker": "AstroService\\App.config",
+              "ToolTip": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\ServerApp\\AstroService\\App.config",
+              "RelativeToolTip": "AstroService\\App.config",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-10-11T06:48:08.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AstroServer.cs",
+              "DocumentMoniker": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\ServerApp\\AstroService\\AstroServer.cs",
+              "RelativeDocumentMoniker": "AstroService\\AstroServer.cs",
+              "ToolTip": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\ServerApp\\AstroService\\AstroServer.cs",
+              "RelativeToolTip": "AstroService\\AstroServer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T06:48:08.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IAstroContract.cs",
+              "DocumentMoniker": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\ServerApp\\AstroService\\IAstroContract.cs",
+              "RelativeDocumentMoniker": "AstroService\\IAstroContract.cs",
+              "ToolTip": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\ServerApp\\AstroService\\IAstroContract.cs",
+              "RelativeToolTip": "AstroService\\IAstroContract.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T06:48:08.686Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
