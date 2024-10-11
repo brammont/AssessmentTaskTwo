@@ -12,6 +12,7 @@ namespace AstroService
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Starting WCF Service...");
             Uri baseAddress = new Uri("net.pipe://localhost/AstroService");
 
             using (ServiceHost host = new ServiceHost(typeof(AstroServer), baseAddress))
@@ -22,13 +23,12 @@ namespace AstroService
                 try
                 {
                     host.Open();
-                    Console.WriteLine("Servicio WCF en ejecución...");
-                    Console.WriteLine("Presione Enter para finalizar el servicio.");
+                    Console.WriteLine("Service is running... Press Enter to exit.");
                     Console.ReadLine();
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("Error al iniciar el servicio: " + ex.Message);
+                    Console.WriteLine("Error while server started" + ex.Message);
                 }
             }
         }

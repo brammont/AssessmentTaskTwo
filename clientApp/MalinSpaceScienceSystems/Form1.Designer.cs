@@ -46,7 +46,7 @@
             colorDialog1 = new ColorDialog();
             fontDialog1 = new FontDialog();
             labelTitle = new Label();
-            textBoxStarVelocity = new TextBox();
+            textBoxRestWavelength = new TextBox();
             textBoxStarDistance = new TextBox();
             textBoxStarLuminosity = new TextBox();
             textBoxStarMass = new TextBox();
@@ -58,13 +58,16 @@
             labelMode = new Label();
             labelStatusServer = new Label();
             textBoxServerStatus = new TextBox();
+            textBoxObservedWavelength = new TextBox();
+            labelObservedWavelength = new Label();
+            labelRestWavelength = new Label();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSource2).BeginInit();
             SuspendLayout();
             // 
             // buttonClear
             // 
-            buttonClear.Location = new Point(296, 320);
+            buttonClear.Location = new Point(313, 320);
             buttonClear.Margin = new Padding(3, 4, 3, 4);
             buttonClear.Name = "buttonClear";
             buttonClear.Size = new Size(95, 35);
@@ -75,7 +78,7 @@
             // 
             // textBoxResultMass
             // 
-            textBoxResultMass.Location = new Point(320, 259);
+            textBoxResultMass.Location = new Point(382, 252);
             textBoxResultMass.Margin = new Padding(3, 4, 3, 4);
             textBoxResultMass.Name = "textBoxResultMass";
             textBoxResultMass.ReadOnly = true;
@@ -85,7 +88,7 @@
             // 
             // textBoxResultLuminosity
             // 
-            textBoxResultLuminosity.Location = new Point(320, 212);
+            textBoxResultLuminosity.Location = new Point(382, 206);
             textBoxResultLuminosity.Margin = new Padding(3, 4, 3, 4);
             textBoxResultLuminosity.Name = "textBoxResultLuminosity";
             textBoxResultLuminosity.ReadOnly = true;
@@ -95,7 +98,7 @@
             // 
             // textBoxResultDistance
             // 
-            textBoxResultDistance.Location = new Point(320, 161);
+            textBoxResultDistance.Location = new Point(382, 155);
             textBoxResultDistance.Margin = new Padding(3, 4, 3, 4);
             textBoxResultDistance.Name = "textBoxResultDistance";
             textBoxResultDistance.ReadOnly = true;
@@ -105,7 +108,7 @@
             // 
             // textBoxResultVelocity
             // 
-            textBoxResultVelocity.Location = new Point(320, 113);
+            textBoxResultVelocity.Location = new Point(382, 113);
             textBoxResultVelocity.Margin = new Padding(3, 4, 3, 4);
             textBoxResultVelocity.Name = "textBoxResultVelocity";
             textBoxResultVelocity.ReadOnly = true;
@@ -121,7 +124,7 @@
             labelLanguage.Size = new Size(77, 20);
             labelLanguage.TabIndex = 10;
             labelLanguage.Text = "Language:";
-            labelLanguage.UseMnemonic = false;            
+            labelLanguage.UseMnemonic = false;
             // 
             // buttonFontCustomization
             // 
@@ -172,7 +175,7 @@
             textBoxErrorHandler.Margin = new Padding(3, 4, 3, 4);
             textBoxErrorHandler.Name = "textBoxErrorHandler";
             textBoxErrorHandler.Size = new Size(395, 27);
-            textBoxErrorHandler.TabIndex = 0;            
+            textBoxErrorHandler.TabIndex = 0;
             // 
             // comboBoxLanguage
             // 
@@ -189,25 +192,25 @@
             // 
             labelTitle.AutoSize = true;
             labelTitle.Font = new Font("Segoe MDL2 Assets", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelTitle.Location = new Point(77, 28);
+            labelTitle.Location = new Point(94, 9);
             labelTitle.Name = "labelTitle";
             labelTitle.Size = new Size(314, 28);
             labelTitle.TabIndex = 5;
             labelTitle.Text = "Astronomical Processing Client";
             labelTitle.TextAlign = ContentAlignment.TopCenter;
             // 
-            // textBoxStarVelocity
+            // textBoxRestWavelength
             // 
-            textBoxStarVelocity.Location = new Point(216, 113);
-            textBoxStarVelocity.Margin = new Padding(3, 4, 3, 4);
-            textBoxStarVelocity.Name = "textBoxStarVelocity";
-            textBoxStarVelocity.Size = new Size(97, 27);
-            textBoxStarVelocity.TabIndex = 0;
-            textBoxStarVelocity.TextAlign = HorizontalAlignment.Center;
+            textBoxRestWavelength.Location = new Point(268, 113);
+            textBoxRestWavelength.Margin = new Padding(3, 4, 3, 4);
+            textBoxRestWavelength.Name = "textBoxRestWavelength";
+            textBoxRestWavelength.Size = new Size(97, 27);
+            textBoxRestWavelength.TabIndex = 0;
+            textBoxRestWavelength.TextAlign = HorizontalAlignment.Center;
             // 
             // textBoxStarDistance
             // 
-            textBoxStarDistance.Location = new Point(216, 161);
+            textBoxStarDistance.Location = new Point(268, 155);
             textBoxStarDistance.Margin = new Padding(3, 4, 3, 4);
             textBoxStarDistance.Name = "textBoxStarDistance";
             textBoxStarDistance.Size = new Size(97, 27);
@@ -216,7 +219,7 @@
             // 
             // textBoxStarLuminosity
             // 
-            textBoxStarLuminosity.Location = new Point(216, 212);
+            textBoxStarLuminosity.Location = new Point(268, 209);
             textBoxStarLuminosity.Margin = new Padding(3, 4, 3, 4);
             textBoxStarLuminosity.Name = "textBoxStarLuminosity";
             textBoxStarLuminosity.Size = new Size(97, 27);
@@ -225,7 +228,7 @@
             // 
             // textBoxStarMass
             // 
-            textBoxStarMass.Location = new Point(217, 259);
+            textBoxStarMass.Location = new Point(268, 252);
             textBoxStarMass.Margin = new Padding(3, 4, 3, 4);
             textBoxStarMass.Name = "textBoxStarMass";
             textBoxStarMass.Size = new Size(97, 27);
@@ -234,7 +237,7 @@
             // 
             // buttonCalculate
             // 
-            buttonCalculate.Location = new Point(77, 320);
+            buttonCalculate.Location = new Point(94, 320);
             buttonCalculate.Margin = new Padding(3, 4, 3, 4);
             buttonCalculate.Name = "buttonCalculate";
             buttonCalculate.Size = new Size(95, 35);
@@ -246,25 +249,25 @@
             // labelStarVelocity
             // 
             labelStarVelocity.AutoSize = true;
-            labelStarVelocity.Location = new Point(34, 113);
+            labelStarVelocity.Location = new Point(12, 70);
             labelStarVelocity.Name = "labelStarVelocity";
-            labelStarVelocity.Size = new Size(94, 20);
+            labelStarVelocity.Size = new Size(129, 20);
             labelStarVelocity.TabIndex = 10;
-            labelStarVelocity.Text = "Star Velocity:";
+            labelStarVelocity.Text = "Star Velocity(m/s):";
             // 
             // labelStarDistance
             // 
             labelStarDistance.AutoSize = true;
-            labelStarDistance.Location = new Point(34, 161);
+            labelStarDistance.Location = new Point(12, 158);
             labelStarDistance.Name = "labelStarDistance";
-            labelStarDistance.Size = new Size(99, 20);
+            labelStarDistance.Size = new Size(150, 20);
             labelStarDistance.TabIndex = 11;
-            labelStarDistance.Text = "Star Distance:";
+            labelStarDistance.Text = "Star Distance(arcsec):";
             // 
             // labelStarLuminosity
             // 
             labelStarLuminosity.AutoSize = true;
-            labelStarLuminosity.Location = new Point(34, 212);
+            labelStarLuminosity.Location = new Point(12, 209);
             labelStarLuminosity.Name = "labelStarLuminosity";
             labelStarLuminosity.Size = new Size(150, 20);
             labelStarLuminosity.TabIndex = 12;
@@ -273,11 +276,11 @@
             // labelStarMass
             // 
             labelStarMass.AutoSize = true;
-            labelStarMass.Location = new Point(34, 259);
+            labelStarMass.Location = new Point(12, 259);
             labelStarMass.Name = "labelStarMass";
-            labelStarMass.Size = new Size(75, 20);
+            labelStarMass.Size = new Size(101, 20);
             labelStarMass.TabIndex = 13;
-            labelStarMass.Text = "Star Mass:";
+            labelStarMass.Text = "Star Mass(kg):";
             // 
             // labelMode
             // 
@@ -304,7 +307,33 @@
             textBoxServerStatus.Name = "textBoxServerStatus";
             textBoxServerStatus.Size = new Size(272, 27);
             textBoxServerStatus.TabIndex = 17;
-            textBoxServerStatus.TextChanged += textBoxServerStatus_TextChanged;
+            // 
+            // textBoxObservedWavelength
+            // 
+            textBoxObservedWavelength.Location = new Point(153, 114);
+            textBoxObservedWavelength.Margin = new Padding(3, 4, 3, 4);
+            textBoxObservedWavelength.Name = "textBoxObservedWavelength";
+            textBoxObservedWavelength.Size = new Size(97, 27);
+            textBoxObservedWavelength.TabIndex = 18;
+            textBoxObservedWavelength.TextAlign = HorizontalAlignment.Center;
+            // 
+            // labelObservedWavelength
+            // 
+            labelObservedWavelength.AutoSize = true;
+            labelObservedWavelength.Location = new Point(32, 90);
+            labelObservedWavelength.Name = "labelObservedWavelength";
+            labelObservedWavelength.Size = new Size(188, 20);
+            labelObservedWavelength.TabIndex = 19;
+            labelObservedWavelength.Text = "Observed Wavelength(nm):";
+            // 
+            // labelRestWavelength
+            // 
+            labelRestWavelength.AutoSize = true;
+            labelRestWavelength.Location = new Point(232, 89);
+            labelRestWavelength.Name = "labelRestWavelength";
+            labelRestWavelength.Size = new Size(157, 20);
+            labelRestWavelength.TabIndex = 20;
+            labelRestWavelength.Text = "Rest Wavelength(nm) :";
             // 
             // Form1
             // 
@@ -312,6 +341,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(492, 690);
+            Controls.Add(labelRestWavelength);
+            Controls.Add(labelObservedWavelength);
+            Controls.Add(textBoxObservedWavelength);
             Controls.Add(textBoxServerStatus);
             Controls.Add(labelStatusServer);
             Controls.Add(labelMode);
@@ -336,7 +368,7 @@
             Controls.Add(textBoxResultVelocity);
             Controls.Add(labelStarVelocity);
             Controls.Add(buttonCalculate);
-            Controls.Add(textBoxStarVelocity);
+            Controls.Add(textBoxRestWavelength);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
@@ -364,7 +396,7 @@
         private Label labelErrorMessagingArea;
         private Button buttonClear;
 		private Label labelTitle;
-		private TextBox textBoxStarVelocity;
+		private TextBox textBoxRestWavelength;
 		private TextBox textBoxStarDistance;
 		private TextBox textBoxStarLuminosity;
 		private TextBox textBoxStarMass;
@@ -376,5 +408,8 @@
 		private Label labelMode;
         private Label labelStatusServer;
         private TextBox textBoxServerStatus;
+        private TextBox textBoxObservedWavelength;
+        private Label labelObservedWavelength;
+        private Label labelRestWavelength;
     }
 }

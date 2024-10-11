@@ -11,7 +11,7 @@ namespace ClientApp
     public partial class Form1 : Form
     {
         private AstroContractClient _serviceClient;// WCF client instance
-        
+
         public Form1()
         {
             InitializeComponent();
@@ -59,16 +59,22 @@ namespace ClientApp
             try
             {
                 // Retrieve inputs
-                double velocity = Convert.ToDouble(textBoxStarVelocity.Text);
+                double restWavelength = Convert.ToDouble(textBoxRestWavelength.Text);
+                double observedWavelength = Convert.ToDouble(textBoxObservedWavelength.Text);
                 double distance = Convert.ToDouble(textBoxStarDistance.Text);
                 double mass = Convert.ToDouble(textBoxStarMass.Text);
                 double luminosity = Convert.ToDouble(textBoxStarLuminosity.Text);
+                double c = 2.99792458 * Math.Pow(10, 8); // Speed of light
+                double waveDelta = (observedWavelength - restWavelength);
+                double StarVelocity = c * (waveDelta / restWavelength);
+                double G = 6.6743 * Math.Pow(10, -11);
+                
 
-                // Perform calculations (example calculations)
-                textBoxResultVelocity.Text = (velocity * 1.1).ToString(); // Example calculation
-                textBoxResultDistance.Text = (distance * 1.2).ToString(); // Example calculation
-                textBoxResultMass.Text = (mass * 1.3).ToString(); // Example calculation
-                textBoxResultLuminosity.Text = (luminosity * 1.4).ToString(); // Example calculation
+                // 
+                textBoxResultVelocity.Text = (StarVelocity).ToString("E4"); // Example calculation
+                textBoxResultDistance.Text = (1 / distance).ToString(); // Example calculation
+                textBoxResultMass.Text = ((2 * G * mass) / (c * c)).ToString("E4"); // Example calculation
+                textBoxResultLuminosity.Text = (luminosity + 273).ToString();
             }
             catch (Exception ex)
             {
@@ -187,10 +193,10 @@ namespace ClientApp
                         { "Title", "Astronomical Processing Client" },
                         { "Language", "language" },
                         { "ErrorMessagingArea", "Error Messaging Area" },
-                        { "StarVelocity", "Star Velocity" },
-                        { "StarDistance", "Star Distance" },
-                        { "StarLuminosity", "Star Luminosity" },
-                        { "StarMass", "Star Mass" },
+                        { "StarVelocity", "Star Velocity (m/s):" },
+                        { "StarDistance", "Star Distance (Arcseconds angle)" },
+                        { "StarLuminosity", "Temperature (C to K)" },
+                        { "StarMass", "Star Mass (kg)" },
                         { "ResultVelocity", "Result Velocity" },
                         { "ResultDistance", "Result Distance" },
                         { "ResultLuminosity", "Result Luminosity" },
@@ -200,7 +206,9 @@ namespace ClientApp
                         { "ButtonBackgroundColor", "Background Color" },
                         { "ButtonFontCustomization", "Font Customization" },
                         { "Mode","Mode"},
-                        { "StatusServer","Server Status"},                        
+                        { "StatusServer","Server Status"},
+                        { "Observed Wavelength","Observed Wavelength" },
+                        { "Rest Wavelength","Rest Wavelength" },
                         { "CheckBoxNightMode", "Day/Night Mode" },
 
                     }
@@ -210,10 +218,10 @@ namespace ClientApp
                         { "Title", "Client de traitement astronomique" },
                         { "Language", "Langue" },
                         { "ErrorMessagingArea", "Zone de messagerie d'erreur" },
-                        { "StarVelocity", "Vitesse de l'étoile" },
-                        { "StarDistance", "Distance de l'étoile" },
-                        { "StarLuminosity", "Luminosité de l'étoile" },
-                        { "StarMass", "Masse de l'étoile" },
+                        { "StarVelocity", "Vitesse de l'étoile(m/s)" },
+                        { "StarDistance", "Distance de l'étoile(Angle en arcsecondes)" },
+                        { "StarLuminosity", "Luminosité de l'étoile(C a K)" },
+                        { "StarMass", "Masse de l'étoile(Kg)" },
                         { "ResultVelocity", "Résultat Vitesse" },
                         { "ResultDistance", "Résultat Distance" },
                         { "ResultLuminosity", "Résultat Luminosité" },
@@ -224,6 +232,8 @@ namespace ClientApp
                         { "ButtonFontCustomization", "Personnalisation des polices" },
                         { "Mode","Mode"},
                         { "StatusServer","État du serveur"},
+                        {"Observed Wavelength","Longueur d'onde observée" },
+                        {"Rest Wavelength","Longueur d'onde de repos" },
                         { "CheckBoxNightMode", "Mode Jour/Nuit" }
                     }
                 },
@@ -232,10 +242,10 @@ namespace ClientApp
                         { "Title", "Astronomischer Verarbeitungskunde" },
                         { "Language", "Sprache" },
                         { "ErrorMessagingArea", "Fehlermeldungsbereich" },
-                        { "StarVelocity", "Sternengeschwindigkeit" },
-                        { "StarDistance", "Sterndistanz" },
-                        { "StarLuminosity", "Sternleuchtkraft" },
-                        { "StarMass", "Sternmasse" },
+                        { "StarVelocity", "Sternengeschwindigkeit(m/s)" },
+                        { "StarDistance", "Sterndistanz(Winkel in Bogensekunden)" },
+                        { "StarLuminosity", "Sternleuchtkraft(C bis K)" },
+                        { "StarMass", "Sternmasse(Kg)" },
                         { "ResultVelocity", "Ergebnis Geschwindigkeit" },
                         { "ResultDistance", "Ergebnis Distanz" },
                         { "ResultLuminosity", "Ergebnis Leuchtkraft" },
@@ -246,6 +256,8 @@ namespace ClientApp
                         { "ButtonFontCustomization", "Schriftanpassung" },
                         { "Mode","Modus"},
                         { "StatusServer","Serverstatus"},
+                        {"Observed Wavelength","Beobachtete Wellenlänge" },
+                        {"Rest Wavelength","Ruhewellenlänge" },
                         { "CheckBoxNightMode", "Tag/Nacht Modus" }
                     }
                 }
@@ -271,6 +283,8 @@ namespace ClientApp
                     labelStarMass.Text = languageStrings[selectedLanguage]["StarMass"];
                     labelMode.Text = languageStrings[selectedLanguage]["Mode"];
                     labelStatusServer.Text = languageStrings[selectedLanguage]["StatusServer"];
+                    labelObservedWavelength.Text = languageStrings[selectedLanguage]["Observed Wavelength"];
+                    labelRestWavelength.Text = languageStrings[selectedLanguage]["Rest Wavelength"];
                     // Update buttons
                     buttonCalculate.Text = languageStrings[selectedLanguage]["ButtonCalculate"];
                     buttonClear.Text = languageStrings[selectedLanguage]["ButtonClear"];
@@ -308,11 +322,7 @@ namespace ClientApp
             }
         }
 
-       
-        private void textBoxServerStatus_TextChanged(object sender, EventArgs e)
-        {
-            //here put code to show when the server is conected and running
-        }
+        
     }
 }
 

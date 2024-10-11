@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iqr965pJsUI=",
+  "dgSpecHash": "amqbCfDh/Ks=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\clientApp\\MalinSpaceScienceSystems\\ClientApp.csproj",
+  "projectFilePath": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\ClientApp\\MalinSpaceScienceSystems\\ClientApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mazue\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\mazue\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
