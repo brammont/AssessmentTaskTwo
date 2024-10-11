@@ -8,3 +8,13 @@ C:\Users\30085203\Downloads\MalinSpaceScienceSystems-main\AstroService\AstroServ
 C:\Users\30085203\Downloads\MalinSpaceScienceSystems-main\AstroService\AstroService\obj\Debug\serverApp.csproj.CopyComplete
 C:\Users\30085203\Downloads\MalinSpaceScienceSystems-main\AstroService\AstroService\obj\Debug\AstroService.dll
 C:\Users\30085203\Downloads\MalinSpaceScienceSystems-main\AstroService\AstroService\obj\Debug\AstroService.pdb
+C:\Users\mazue\Documents\GitHub\AssessmentTaskTwo\AstroService\AstroService\bin\Debug\AstroService.dll.config
+C:\Users\mazue\Documents\GitHub\AssessmentTaskTwo\AstroService\AstroService\bin\Debug\AstroService.dll
+C:\Users\mazue\Documents\GitHub\AssessmentTaskTwo\AstroService\AstroService\bin\Debug\AstroService.pdb
+C:\Users\mazue\Documents\GitHub\AssessmentTaskTwo\AstroService\AstroService\bin\Debug\AstroMaths.dll
+C:\Users\mazue\Documents\GitHub\AssessmentTaskTwo\AstroService\AstroService\bin\Debug\AstroMaths.pdb
+C:\Users\mazue\Documents\GitHub\AssessmentTaskTwo\AstroService\AstroService\obj\Debug\serverApp.csproj.AssemblyReference.cache
+C:\Users\mazue\Documents\GitHub\AssessmentTaskTwo\AstroService\AstroService\obj\Debug\serverApp.csproj.CoreCompileInputs.cache
+C:\Users\mazue\Documents\GitHub\AssessmentTaskTwo\AstroService\AstroService\obj\Debug\serverApp.csproj.Up2Date
+C:\Users\mazue\Documents\GitHub\AssessmentTaskTwo\AstroService\AstroService\obj\Debug\AstroService.dll
+C:\Users\mazue\Documents\GitHub\AssessmentTaskTwo\AstroService\AstroService\obj\Debug\AstroService.pdb
