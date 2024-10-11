@@ -33,19 +33,6 @@
           "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Reference.cs",
-              "DocumentMoniker": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\clientApp\\MalinSpaceScienceSystems\\Connected Services\\ServiceReference1\\Reference.cs",
-              "RelativeDocumentMoniker": "MalinSpaceScienceSystems\\Connected Services\\ServiceReference1\\Reference.cs",
-              "ToolTip": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\clientApp\\MalinSpaceScienceSystems\\Connected Services\\ServiceReference1\\Reference.cs",
-              "RelativeToolTip": "MalinSpaceScienceSystems\\Connected Services\\ServiceReference1\\Reference.cs",
-              "ViewState": "AgIAAM0AAAAAAAAAAAAQwOQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T03:52:34.591Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
@@ -67,13 +54,25 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Reference.cs",
+              "DocumentMoniker": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\clientApp\\MalinSpaceScienceSystems\\Connected Services\\ServiceReference1\\Reference.cs",
+              "RelativeDocumentMoniker": "MalinSpaceScienceSystems\\Connected Services\\ServiceReference1\\Reference.cs",
+              "ToolTip": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\clientApp\\MalinSpaceScienceSystems\\Connected Services\\ServiceReference1\\Reference.cs",
+              "RelativeToolTip": "MalinSpaceScienceSystems\\Connected Services\\ServiceReference1\\Reference.cs",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAQwOQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T03:52:34.591Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\clientApp\\MalinSpaceScienceSystems\\Form1.cs",
               "RelativeDocumentMoniker": "MalinSpaceScienceSystems\\Form1.cs",
               "ToolTip": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\clientApp\\MalinSpaceScienceSystems\\Form1.cs",
               "RelativeToolTip": "MalinSpaceScienceSystems\\Form1.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwCcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-08T07:56:57.09Z",
               "EditorCaption": ""
@@ -88,8 +87,7 @@
               "RelativeToolTip": "MalinSpaceScienceSystems\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T07:54:08.966Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T07:54:08.966Z"
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "RelativeToolTip": "MalinSpaceScienceSystems\\Form1.Designer.cs",
               "ViewState": "AgIAABMBAAAAAAAAAAAYwCEBAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T07:44:48.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T07:44:48.218Z"
             },
             {
               "$type": "Document",
@@ -113,8 +110,7 @@
               "ToolTip": "C:\\Users\\mazue\\Documents\\GitHub\\AssessmentTaskTwo\\clientApp\\MalinSpaceScienceSystems\\Form1.cs [Design]",
               "RelativeToolTip": "MalinSpaceScienceSystems\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T07:48:07.72Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-08T07:48:07.72Z"
             }
           ]
         }

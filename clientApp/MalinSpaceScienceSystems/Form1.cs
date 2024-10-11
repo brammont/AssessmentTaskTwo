@@ -17,9 +17,27 @@ namespace ClientApp
             InitializeComponent();
             InitializeLanguageComboBox();
             SetInitialSettings();
+            ConnectToServer(); // Connect to the server at startup
 
         }
+        private void ConnectToServer()
+        {
+            try
+            {
+                // Instantiate the WCF client with appropriate binding and endpoint address
+                var binding = new System.ServiceModel.BasicHttpBinding();
+                var endpoint = new System.ServiceModel.EndpointAddress("http://localhost:5000/YourServiceEndpoint"); // Replace with actual endpoint
+                _serviceClient = new AstroContractClient(binding, endpoint);
 
+                // Open the connection asynchronously
+                _serviceClient.OpenAsync();
+                textBoxServerStatus.Text = "Connected to the server.";
+            }
+            catch (Exception ex)
+            {
+                textBoxServerStatus.Text = "Failed to connect to server: " + ex.Message;
+            }
+        }
         private void InitializeLanguageComboBox()
         {
             comboBoxLanguage.Items.AddRange(new string[] { "English", "French", "German" });
